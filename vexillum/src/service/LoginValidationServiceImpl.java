@@ -13,17 +13,19 @@ public class LoginValidationServiceImpl implements LoginValidationService{
 	public boolean loginAsAdmin(final String userName, final String password) {
 		loginValidationDAO = new LoginValidationDAO();
 		if(loginValidationDAO.isAdmin(userName, password)) {
+			System.out.println("OK");
 			return true;	
 		} else 
+			System.out.println("NOT OK");
 			return false;
 	}
 
 	@Override
 	public boolean loginAsUser(String userName, String password) {
 		loginValidationDAO = new LoginValidationDAO();
-		if(loginValidationDAO.isUser(userName, password)) {
+/*		if(loginValidationDAO.isUser(userName, password)) {
 			return true;	
-		} else 
+		} else */
 			return false;
 	}
 }

@@ -5,7 +5,7 @@ public class PersonInfo {
 	PersonInfo(){
 	}
 	
-	private String personId;
+	private String userId;
 	private String password;
 	private String firstName;
 	private String lastName;
@@ -22,11 +22,11 @@ public class PersonInfo {
 	private String updatedOn;
 	private boolean isDeleted;
 	
-	public String getPersonId() {
-		return personId;
+	public String getUserId() {
+		return userId;
 	}
-	public void setPersonId(String personId) {
-		this.personId = personId;
+	public void setUserId(String userId) {
+		this.userId = userId;
 	}
 	public String getPassword() {
 		return password;

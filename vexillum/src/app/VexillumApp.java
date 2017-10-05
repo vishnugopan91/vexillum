@@ -24,7 +24,7 @@ public class VexillumApp {
 	public static void main(String[] args) {
 
 		loginValidationService= new LoginValidationServiceImpl();
-		loginValidationService.loginAsAdmin("testUN", "testPwd");
+		loginValidationService.loginAsAdmin("calypso", "calypso");
 	}
 
 }
